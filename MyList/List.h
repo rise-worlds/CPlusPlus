@@ -9,12 +9,25 @@ public:
 	class Node;
 	List(void)
 	{
-		_head.next = &_end;
-		_end.prev = &_head;
+		_head = new Node;
+		//_end = new Node;
+		//_head->next = _end;
+		//_end->prev = _head;
 	}
+
 	~List(void)
 	{
 	}
+
+	//Node* append(T data)
+	//{
+	//	Node* node = new Node(data);
+	//	node->prev = _end->prev;
+	//	node->next = _end;
+	//	_end->prev = node;
+
+	//	return node;
+	//}
 
 	Node* insert(Node* pNode, T data)
 	{
@@ -33,8 +46,8 @@ public:
 		return NULL;
 	}
 
-	Node* begin(){return &_head;}
-	Node* end(){return &_end;}
+	Node* begin(){return _head;}
+	//Node* end(){return _end;}
 private:
 	class Node
 	{
@@ -55,6 +68,6 @@ private:
 		T data;
 	};
 
-	Node _head;
-	Node _end;
+	Node* _head;
+	//Node* _end;
 };
