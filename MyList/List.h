@@ -10,24 +10,36 @@ public:
 	List(void)
 	{
 		_head = new Node;
-		//_end = new Node;
-		//_head->next = _end;
-		//_end->prev = _head;
+		_head->prev = _head;
+		_head->next = _head;
 	}
 
 	~List(void)
 	{
 	}
 
-	//Node* append(T data)
-	//{
-	//	Node* node = new Node(data);
-	//	node->prev = _end->prev;
-	//	node->next = _end;
-	//	_end->prev = node;
+	Node* push_front(T data)
+	{
+		Node* node = new Node(data);
 
-	//	return node;
-	//}
+		node->next			= _head->next;
+		node->prev			= _head;
+		_head->next->prev	= node;
+		_head->next			= node;
+
+		return node;
+	}
+
+	Node* push_back(T data)
+	{
+		Node* node = new Node(data);
+		node->prev          = _head->prev;
+		node->next          = _head;
+		_head->prev->next	= node;
+		_head->prev			= node;
+
+		return node;
+	}
 
 	Node* insert(Node* pNode, T data)
 	{
@@ -46,8 +58,20 @@ public:
 		return NULL;
 	}
 
-	Node* begin(){return _head;}
-	//Node* end(){return _end;}
+	Node* begin()
+	{
+		return _head->next;
+	}
+
+	Node* end()
+	{
+		return _head;
+	}
+
+	bool isEmpty()
+	{
+		return _head->next == _head;
+	}
 private:
 	class Node
 	{
@@ -69,5 +93,4 @@ private:
 	};
 
 	Node* _head;
-	//Node* _end;
 };

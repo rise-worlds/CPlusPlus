@@ -13,6 +13,10 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{E30C8E23-9015-4718-9872-0B47FF45C783}</ProjectGuid>
     <RootNamespace>MyList</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
