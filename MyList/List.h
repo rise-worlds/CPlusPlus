@@ -16,9 +16,15 @@ public:
 
 	~List(void)
 	{
+		Node* iter = begin();
+		while (iter != end())
+		{
+			remove(iter);
+			iter = begin();
+		};
 	}
 
-	Node* push_front(T data)
+	Node* push_front(T data) const
 	{
 		Node* node = new Node(data);
 
@@ -30,7 +36,7 @@ public:
 		return node;
 	}
 
-	Node* push_back(T data)
+	Node* push_back(T data) const
 	{
 		Node* node = new Node(data);
 		node->prev          = _head->prev;
@@ -41,7 +47,7 @@ public:
 		return node;
 	}
 
-	Node* insert(Node* pNode, T data)
+	Node* insert(Node* pNode, T data) const
 	{
 		if (pNode)
 		{
@@ -58,7 +64,7 @@ public:
 		return NULL;
 	}
 
-	void del(Node* pNode)
+	void remove(Node* pNode)
 	{
 		if (pNode != NULL && pNode != _head)
 		{
@@ -69,17 +75,17 @@ public:
 		}
 	}
 
-	Node* begin()
+	Node* begin() const
 	{
 		return _head->next;
 	}
 
-	Node* end()
+	Node* end() const
 	{
 		return _head;
 	}
 
-	bool isEmpty()
+	bool isEmpty() const
 	{
 		return _head->next == _head;
 	}
@@ -92,9 +98,16 @@ private:
 			prev = NULL;
 			next = NULL;
 		}
+
 		Node(T value)
 		{
 			data = value;
+		}
+
+		~Node()
+		{
+			prev = NULL;
+			next = NULL;
 		}
 
 		Node* prev;
