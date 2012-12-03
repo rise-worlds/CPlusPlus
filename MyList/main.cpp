@@ -23,6 +23,8 @@ int main(char* args)
 	//
 	//list.insert(node, 7);
 	//list.insert(node, 8);
+	//list.del(node);
+	//list.del(list.begin());
 
 	//list.insert(list.begin(), 1);
 	//list.insert(list.begin(), 2);

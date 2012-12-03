@@ -58,6 +58,17 @@ public:
 		return NULL;
 	}
 
+	void del(Node* pNode)
+	{
+		if (pNode != NULL && pNode != _head)
+		{
+			pNode->prev->next = pNode->next;
+			pNode->next->prev = pNode->prev;
+			delete pNode;
+			pNode = NULL;
+		}
+	}
+
 	Node* begin()
 	{
 		return _head->next;
