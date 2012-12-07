@@ -67,7 +67,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="postfix.cpp" />
     <ClCompile Include="Stack.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fibonacci.h" />
+    <ClInclude Include="postfix.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

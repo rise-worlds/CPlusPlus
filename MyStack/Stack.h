@@ -1,3 +1,5 @@
+#pragma once
+#include <iostream>
 
 template<class T>
 class Stack
@@ -21,6 +23,7 @@ public:
 		_count++;
 	}
 
+	//T pop()
 	Node* pop()
 	{
 		Node* node = _top;
@@ -30,6 +33,7 @@ public:
 			node->next = NULL;
 			_count--;
 		}
+	//	return node->data;
 		return node;
 	}
 
@@ -41,6 +45,11 @@ public:
 	unsigned int count()
 	{
 		return _count;
+	}
+
+	bool empty()  
+	{
+		return _count == 0 ? true : false;
 	}
 protected:
 	class Node

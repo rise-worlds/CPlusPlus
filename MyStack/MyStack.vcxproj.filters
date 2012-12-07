@@ -21,5 +21,16 @@
     <ClCompile Include="Stack.h">
       <Filter>头文件</Filter>
     </ClCompile>
+    <ClCompile Include="postfix.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="postfix.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fibonacci.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
