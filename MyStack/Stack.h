@@ -7,6 +7,7 @@ public:
 	Stack()
 	{
 		_top = NULL;
+		_count = 0;
 	}
 
 	void push(T value)
@@ -17,6 +18,7 @@ public:
 			node->next = _top;
 		}
 		_top = node;
+		_count++;
 	}
 
 	Node* pop()
@@ -25,8 +27,20 @@ public:
 		if (node != NULL)
 		{
 			_top = _top->next;
+			node->next = NULL;
+			_count--;
 		}
 		return node;
+	}
+
+	Node* top()
+	{
+		return _top;
+	}
+
+	unsigned int count()
+	{
+		return _count;
 	}
 protected:
 	class Node
@@ -42,4 +56,5 @@ protected:
 	};
 private:
 	Node* _top;
+	unsigned int _count;
 };
