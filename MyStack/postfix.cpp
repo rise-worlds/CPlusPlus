@@ -57,7 +57,7 @@ void postfix(char pre[] ,char post[],int &n)
 		}
 		else if (pre[i]=='(')	// 遇到“（”不用比较直接入栈
 			stack.push(pre[i]);
-		else if(pre[i] ==')')  // 遇到右括号将其对应左括号后的操作符（操作符栈中的）全部写入后缀表达式
+		else if(pre[i] ==')')	// 遇到右括号将其对应左括号后的操作符（操作符栈中的）全部写入后缀表达式
 		{
 			while(stack.top()->data!='(')
 			{

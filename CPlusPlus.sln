@@ -5,9 +5,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyList", "MyList\MyList.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyStack", "MyStack\MyStack.vcxproj", "{2C2BB14F-2985-47E4-A1ED-9C5179231D72}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyQueue", "MyQueue\MyQueue.vcxproj", "{7A428A67-11E9-4272-BC54-BB24E9003E65}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
+		SccNumberOfProjects = 4
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs27
 		SccLocalPath0 = .
@@ -17,6 +19,9 @@ Global
 		SccProjectUniqueName2 = MyStack\\MyStack.vcxproj
 		SccProjectName2 = MyStack
 		SccLocalPath2 = MyStack
+		SccProjectUniqueName3 = MyQueue\\MyQueue.vcxproj
+		SccProjectName3 = MyQueue
+		SccLocalPath3 = MyQueue
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -31,6 +36,10 @@ Global
 		{2C2BB14F-2985-47E4-A1ED-9C5179231D72}.Debug|Win32.Build.0 = Debug|Win32
 		{2C2BB14F-2985-47E4-A1ED-9C5179231D72}.Release|Win32.ActiveCfg = Release|Win32
 		{2C2BB14F-2985-47E4-A1ED-9C5179231D72}.Release|Win32.Build.0 = Release|Win32
+		{7A428A67-11E9-4272-BC54-BB24E9003E65}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7A428A67-11E9-4272-BC54-BB24E9003E65}.Debug|Win32.Build.0 = Debug|Win32
+		{7A428A67-11E9-4272-BC54-BB24E9003E65}.Release|Win32.ActiveCfg = Release|Win32
+		{7A428A67-11E9-4272-BC54-BB24E9003E65}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

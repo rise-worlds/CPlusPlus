@@ -20,7 +20,7 @@ int main(int argc, char *argv[], char *envp[])
 	//	std::cout << pNode->data << std::endl;
 	//	delete pNode;
 	//}
-	//std::cout << "stack is empty? " << boolalpha << stack->empty() << std::endl << std::endl;
+	//std::cout << "stack is empty? " << std::boolalpha << stack->empty() << std::endl << std::endl;
 
 	//std::cout << "Fibonacci 40" << std::endl;
 	//for (int i = 0; i < 40; i++)
