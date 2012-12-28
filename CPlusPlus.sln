@@ -7,9 +7,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyStack", "MyStack\MyStack.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyQueue", "MyQueue\MyQueue.vcxproj", "{7A428A67-11E9-4272-BC54-BB24E9003E65}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyBinaryTree", "MyBinaryTree\MyBinaryTree.vcxproj", "{FEB6D450-05B1-47EF-9752-7B8955F9408C}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 4
+		SccNumberOfProjects = 5
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs27
 		SccLocalPath0 = .
@@ -22,6 +24,9 @@ Global
 		SccProjectUniqueName3 = MyQueue\\MyQueue.vcxproj
 		SccProjectName3 = MyQueue
 		SccLocalPath3 = MyQueue
+		SccProjectUniqueName4 = MyBinaryTree\\MyBinaryTree.vcxproj
+		SccProjectName4 = MyBinaryTree
+		SccLocalPath4 = MyBinaryTree
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -40,6 +45,10 @@ Global
 		{7A428A67-11E9-4272-BC54-BB24E9003E65}.Debug|Win32.Build.0 = Debug|Win32
 		{7A428A67-11E9-4272-BC54-BB24E9003E65}.Release|Win32.ActiveCfg = Release|Win32
 		{7A428A67-11E9-4272-BC54-BB24E9003E65}.Release|Win32.Build.0 = Release|Win32
+		{FEB6D450-05B1-47EF-9752-7B8955F9408C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FEB6D450-05B1-47EF-9752-7B8955F9408C}.Debug|Win32.Build.0 = Debug|Win32
+		{FEB6D450-05B1-47EF-9752-7B8955F9408C}.Release|Win32.ActiveCfg = Release|Win32
+		{FEB6D450-05B1-47EF-9752-7B8955F9408C}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
