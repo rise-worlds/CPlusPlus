@@ -4,15 +4,15 @@ int main(char* args)
 {
 	List<int>* list = new List<int>;
 	List<int>::Node *node = NULL;
-	//list->push_back(1);
-	//list->push_back(2);
-	//list->push_back(3);
-	//node = list.push_back(4);
-	//list->push_back(5);
-	//list->push_back(6);
-	//
-	//list->insert(node, 7);
-	//list->insert(node, 8);
+	list->push_back(1);
+	list->push_back(2);
+	list->push_back(3);
+	node = list->push_back(4);
+	list->push_back(5);
+	list->push_back(6);
+	
+	list->insert(node, 7);
+	list->insert(node, 8);
 
 	//list->push_front(1);
 	//list->push_front(2);
@@ -34,12 +34,19 @@ int main(char* args)
 	//list->insert(list->end(), 2);
 	//list->insert(list->end(), 3);
 
-	List<int>::Node* iter = list->begin();
-	while (iter != list->end())
+	//List<int>::Node* iter = list->begin();
+	//while (iter != list->end())
+	//{
+	//	cout << iter->data << endl;
+	//	iter = iter->next;
+	//};
+
+	List<int>::Node* iter = list->end();
+	do
 	{
+		iter = iter->prev;
 		cout << iter->data << endl;
-		iter = iter->next;
-	};
+	}while (iter != list->begin());
 
 	delete list;
 
