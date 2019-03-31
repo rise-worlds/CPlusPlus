@@ -3,14 +3,13 @@ C++ Learn
 
 ## 应该阅读的源码
 
-### 网络/事件
+### 网络/异步
 * nginx
 * redis
   * hiredis
 * boost
   * asio
   * test 测试
-  * gil 通用图像库
   * log
 * nodejs
   * libuv
@@ -22,6 +21,8 @@ C++ Learn
 
 ### 音视频
 * ffmpeg
+* libvpx
+* libde265
 * fmod
 * openal
 
@@ -31,8 +32,17 @@ C++ Learn
 * bzip2
 * lzma
 
-* intel tbb
+### 图像处理
+* boost.gil 通用图像库
+* cximage
+* opencv
 
+### 并发执行和多线程
+* boost.compute
+* intel tbb
+* opencl
+
+### 容器
 * cpp b-tree
 * hashmaps
 
@@ -48,14 +58,22 @@ C++ Learn
 * mygui
 * libiconv 国际化
 
-### json
+### json/xml
 * jbson
 * json++
 * json11
 * libjson
 * rapidjson
+* rapidxml
+* tinyxml++
 
 ### log
 * boost.log
 * easyloggingpp
 * log4cpp
+
+### 序列化
+* FlatBuffers
+* MessagePack
+* protobuf
+
